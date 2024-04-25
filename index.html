@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Firebase Crud</title>
+	<link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+	<h1 class="col-sm-12 d-flex justify-content-center">Medellin's schedule</h1>
+</head>
+<body class="bg-dark">
+	<div class="container p-4">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h1 class="h4">Add Schedule</h1>
+						<form id="task-form">
+							<label for="title">store's name</label>
+							<input class="form-control mb-3" type="text" placeholder="name" id="task-title">
+
+							<label for="description">Schedule</label>
+							<textarea  class="form-control mb-3" id="task-description" rows="3" placeholder="yours Schedule"></textarea>
+
+							<button class="btn btn-primary" id="btn-task-save">Save</button>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6" id="tasks-container"></div>
+		</div>
+	</div>
+
+	<script type="module" src="./Crud.js"></script>
+
+
+</body>
+</html>
